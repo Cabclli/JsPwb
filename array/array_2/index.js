@@ -1,17 +1,19 @@
+let pares=[1,3,2,4]
 
 function sumarPares(par) {
-    let pares=[]
-    for (i = 0 ; i <par; i++){
+    let numbPares = 0
 
-        if (i % 2 === 0 ){
+    for (let i = 0 ; i < par.length; i++){
 
-            pares = pares +" "+ i 
-        
+        if (par[i] % 2 === 0 ){
+
+
+            numbPares = numbPares + par[i]         
         }
 
     };
-    console.log(pares)
+    console.log(numbPares)
 }
 
 
-sumarPares(10);
+sumarPares(pares);
