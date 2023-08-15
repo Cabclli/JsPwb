@@ -1,37 +1,26 @@
 // PRIMERA OPCION
-const palabras = ['csss', 'piedrs', 'silla'];
-let tipo = false
+const palabras = ['cssa', 'piedra', 'silla'];
+let tipo = true;
+let hayA = true;
 
-function todasTerminanEnA(arrayDePalabras) {
-
-
-  for (let palabra of arrayDePalabras) {
-    if (palabra[palabra.length - 1] === 'a' || palabra[palabra.length - 1] === "A") {
-      tipo = true    
-    }
-  }
-  console.log(tipo + " " + "PRIMERA OPCION SIN ENDSwHITH" )
-}
-
-
-todasTerminanEnA(palabras); 
-
-// SEGUNDA OPCION
-
-
-function todasTerminanEnA(arrayDePalabras) {
+function todasTerminanEnAs(arrayDePalabras) {
 
 
   for (let palabra of arrayDePalabras) {
-    if (palabra.endsWith('A') || palabra.endsWith('a')) {
-      tipo = true    
+    if (!palabra.endsWith('a')) {
+      tipo = false;    
+    }
+    else if (!palabra.endsWith('A')){
+      hayA = false;
     }
   }
-  console.log(tipo + ""+"SEGUNDA OPCION")
+  console.log(tipo)
+  console.log(hayA)
+
 }
 
 
-todasTerminanEnA(palabras);
+todasTerminanEnAs(palabras);
 
 
 
