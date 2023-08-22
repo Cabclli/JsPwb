@@ -1,18 +1,28 @@
-const vuelta = [1,2,3,-5,-15]
+// PRIMERA OPCION
+const palabras = ['cssa', 'piedra', 'silla'];
+let tipo = true;
+let hayA = true;
 
-function cambio(num) {
-    let numeros = []
-     
+function todasTerminanEnAs(arrayDePalabras) {
 
-    for (let i = 0 ; i < num.length; i++){
 
-        const numero = Math.abs(num[i])
-        
-        numeros.push(numero)
+  for (let palabra of arrayDePalabras) {
+    if (!palabra.endsWith('a')) {
+      tipo = false;    
+    }
+    else if (!palabra.endsWith('A')){
+      hayA = false;
+    }
+  }
+  console.log(tipo)
+  console.log(hayA)
 
-        
-
-    };
-    console.log(numeros)
 }
-cambio(vuelta)
+
+
+todasTerminanEnAs(palabras);
+
+
+
+
+

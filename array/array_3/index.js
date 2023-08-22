@@ -1,28 +1,19 @@
-// PRIMERA OPCION
-const palabras = ['cssa', 'piedra', 'silla'];
-let tipo = true;
-let hayA = true;
+let pares=[1,3,2,4]
 
-function todasTerminanEnAs(arrayDePalabras) {
+function sumarPares(par) {
+    let numbPares = 0
+
+    for (let i = 0 ; i < par.length; i++){
+
+        if (par[i] % 2 === 0 ){
 
 
-  for (let palabra of arrayDePalabras) {
-    if (!palabra.endsWith('a')) {
-      tipo = false;    
-    }
-    else if (!palabra.endsWith('A')){
-      hayA = false;
-    }
-  }
-  console.log(tipo)
-  console.log(hayA)
+            numbPares = numbPares + par[i]         
+        }
 
+    };
+    console.log(numbPares)
 }
 
 
-todasTerminanEnAs(palabras);
-
-
-
-
-
+sumarPares(pares);

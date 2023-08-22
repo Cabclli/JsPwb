@@ -1,19 +1,6 @@
-let pares=[1,3,2,4]
+const numbers = [1, 2, 3, 4, 5]
+numbers[0] = 10
+numbers[2] = 30
+console.log(numbers)
 
-function sumarPares(par) {
-    let numbPares = 0
-
-    for (let i = 0 ; i < par.length; i++){
-
-        if (par[i] % 2 === 0 ){
-
-
-            numbPares = numbPares + par[i]         
-        }
-
-    };
-    console.log(numbPares)
-}
-
-
-sumarPares(pares);
+// te remplaza el numero por el lugar que elegis 
