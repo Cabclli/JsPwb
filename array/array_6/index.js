@@ -1,5 +1,5 @@
-//pregunta si el indice donde se encuentra es mayo que el indice donde esta parado pepito
-let words = ["loa", "las", "naso", "pepito"];
+//pregunta si el indice de cada palabra  es mayor que el indice donde esta parado pepito
+let words = ["loa", "las", "naso", "pepitooooooooo"];
 
 let word = "pepito";
 
