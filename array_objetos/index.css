@@ -11,32 +11,39 @@ ul {
 h1 {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
+  border: solid;
+  border-radius: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
 }
-
+h2 {
+  color: rgb(243, 255, 249);
+}
+h3 {
+  color: rgb(243, 255, 249);
+}
 body {
-  background-color: rgb(71, 71, 241);
+  background-image: url("https://img.freepik.com/fotos-premium/fondo-campo-hierba-verde-futbol-deportes-futbol_64749-1823.jpg");
 }
 
 img {
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
   object-fit: cover;
   aspect-ratio: 4/3;
-}
-
-ul li {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.3s;
-}
-
-ul li img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
 ul li:hover {
   transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+button {
+  background-color: rgb(154, 231, 154);
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
 }

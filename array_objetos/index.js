@@ -2,7 +2,8 @@ const items = [
   {
     id: 1,
     title: "el diegoo",
-    imageSrc: "maradona.jpeg",
+    imageSrc:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Maradona-Mundial_86_con_la_copa.JPG/1200px-Maradona-Mundial_86_con_la_copa.JPG",
     description: "uno que juega poco",
   },
   {
