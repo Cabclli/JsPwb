@@ -1,0 +1,19 @@
+li {
+  list-style: none;
+}
+
+.agarrador {
+  display: flex;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+.gris {
+  background-color: rgb(84, 83, 83);
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+h3 {
+  color: rgb(128, 128, 128);
+}
