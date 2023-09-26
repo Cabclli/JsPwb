@@ -2,18 +2,56 @@ li {
   list-style: none;
 }
 
+@media screen and (max-width: 768px) {
+  .agarrador {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .gris {
+    margin-right: 0;
+  }
+}
+.logo {
+  width: 10%;
+  height: auto;
+}
 .agarrador {
-  display: flex;
-  justify-content: center;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 10px;
+  padding: 4.5rem rem 0px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
 }
+
 .gris {
-  background-color: rgb(84, 83, 83);
+  background-color: rgb(56, 55, 55);
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  justify-content: flex-start;
+  border-radius: 20px;
 }
+
+.personajes {
+  padding-left: 6px;
+}
+
 h3 {
-  color: rgb(128, 128, 128);
+  color: solid;
+}
+
+img {
+  border-radius: 20px;
+}
+
+p {
+  color: rgb(96, 96, 96);
+}
+.logo {
+  width: 40px;
+  height: 40px;
 }
