@@ -1,3 +1,25 @@
+.estado {
+  display: flex;
+  flex-direction: row;
+}
+
+.vivo {
+  color: green;
+}
+.fondo {
+  display: flex;
+  justify-content: center;
+}
+.foto {
+  position: absolute;
+  bottom: 52%;
+}
+.muerto {
+  color: red;
+}
+.depa {
+  color: rgb(82, 82, 82);
+}
 li {
   list-style: none;
 }
@@ -41,7 +63,9 @@ p {
 }
 
 .blanco {
-  background-color: aliceblue;
+  background-color: white;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 
 .first h3 {
@@ -85,14 +109,12 @@ img {
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  background-color: white;
   font-size: 50px;
   font-family: sans-serif;
-  margin-right: -10px;
-  margin-left: -10px;
   padding-bottom: 17px;
-
-  background-image: url("https://o.remove.bg/downloads/3a62a30c-e733-4a52-ae7e-8df5c449929e/download-removebg-preview.png");
+  position: relative;
+  z-index: 2;
+  margin-bottom: -14px;
 }
 
 .barra {
@@ -130,27 +152,4 @@ button {
 .bot:hover {
   background-color: orange;
   border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-  .agarrador {
-    grid-template-columns: 1fr; /* Cambia a una sola columna */
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .titulo {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    font-size: 50px;
-    font-family: sans-serif;
-  }
-  .barra {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    margin-right: -10px;
-    margin-left: -10px;
-    margin-top: -10px;
-  }
 }

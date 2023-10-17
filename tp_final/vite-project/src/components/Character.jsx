@@ -1,11 +1,21 @@
 import { useEffect, useState } from "react";
 import { useCharacter } from "../hooks/useCharacters";
+import { Svgfondo } from "../utils/Svgfondo";
 export function Characters() {
   const { getAllCharacters, character } = useCharacter();
 
   useEffect(() => {
     getAllCharacters();
   }, []);
+  const getStatusColor = (status) => {
+    if (status === "Alive") {
+      return "vivo";
+    } else if (status === "Dead") {
+      return "muerto";
+    } else {
+      return "depa";
+    }
+  };
   return (
     <>
       <div className="barra">
@@ -22,17 +32,25 @@ export function Characters() {
           <button className="bot">SUPPORT US </button>
         </div>
       </div>
-      <div className="titulo">
-        <h1> The Rick and Morty API</h1>
+      <div className="blanco">
+        <div className="titulo">
+          <h1> The Rick and Morty API</h1>
+        </div>
+        <div className="fondo">
+          <Svgfondo />
+        </div>
       </div>
       <div className="agarrador">
         {character.map((item, index) => (
-          <article className="gris" key={index}>
+          <arti cle className="gris" key={index}>
             <img src={item.image}></img>
             <div className="personajes">
               <h2> {item.name} </h2>
 
-              <h4 key={index}>
+              <h4 key={index} className="estado">
+                <div className={`status ${getStatusColor(item.status)}`}>
+                  &#x25CF;
+                </div>
                 {item.status} - {item.species}
               </h4>
               <div className="last">
@@ -44,7 +62,7 @@ export function Characters() {
                 <h3> {item.origin.name}</h3>
               </div>
             </div>
-          </article>
+          </arti>
         ))}
       </div>
     </>
