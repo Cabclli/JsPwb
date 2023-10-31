@@ -1,12 +1,15 @@
 import { useLocation } from "../../hooks/useLocation";
-export function location() {
+import { useEffect, useState } from "react";
+export function Footer() {
   const { getAllLocation, location } = useLocation();
+
   useEffect(() => {
     getAllLocation();
   }, []);
 
-  return;
-  <>
-    <h1>sajdaoisjio</h1>;
-  </>;
+  return (
+    <>
+      <h1>sajdaoisjio</h1>;
+    </>
+  );
 }
