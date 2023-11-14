@@ -203,3 +203,8 @@ a {
   transition: 200ms;
   cursor: pointer;
 }
+.episodes {
+  cursor: pointer;
+  margin-left: -30px;
+  color: grey;
+}
